@@ -1,0 +1,93 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+:root{
+  --navbar-height:59px;
+}
+
+#navbar{
+  display:flex;
+  
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  margin: 8px 22px;
+}
+
+.logo img{
+  border: 80px;
+  border-radius: 50px;
+  background-color: white;
+  padding: 8px;
+  height: 60px;
+}
+.logo img:hover{
+  height: 4.0rem;
+}
+
+#navbar ul{
+  display: flex;
+  list-style: none;
+  margin: 8px 22px;
+  
+}
+#navbar{
+  position: relative;
+}
+
+#navbar ul li a{
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 4px;
+  margin: 6px;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a:hover{
+  background: grey;
+  border-radius: 33px;
+  color: white;
+}
+
+#navbar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+
+/* Home Section */
+#home{
+  display:flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  color: white;
+}
+#home::before{
+  content: "";
+  background: url(../Img/bg1.jpg) no-repeat center center/cover;
+  position: absolute;
+  height:100%;
+  width:100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+/* Utility Class */
+.h1-primary{
+  font-size: 2.8rem;
+  padding: 12px;  
+}
+
+
